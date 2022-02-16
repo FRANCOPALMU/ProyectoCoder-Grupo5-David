@@ -1,0 +1,36 @@
+{% extends "AppGrupo5/padre.html" %}
+
+{% load static %}
+
+{% block contenidoVariable %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1><p style="color: green">Formulario- Agregar Instrumento</p> </h1>
+    
+    {% if miformulario.errors %}
+
+    <p style="color: red;"> Están mal los datos, revisar</p>
+
+    {% endif %}
+
+
+    <form action="" method="POST"> {% csrf_token %}
+
+        <!-- Acá está la magia de Django-->
+        
+        <table>
+
+            {{ miformulario.as_table }}
+
+
+        </table>
+
+
+        <input type="submit", value="Cargar">
+
+    </form>
+
+  
+
+{% endblock %}

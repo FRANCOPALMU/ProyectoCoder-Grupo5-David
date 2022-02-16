@@ -1,0 +1,32 @@
+
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1> Editar Usuario {{usuario}}</h1>
+    
+    {% if form.errors %}
+
+    <p style="color: red;"> Están mal los datos, revisar</p>
+
+    {% endif %}
+
+
+
+    <form action="" method="POST">{% csrf_token %}
+
+        <!-- Acá está la magia de Django-->
+        
+        <table>
+
+            {{ form.as_table }}
+
+
+        </table>
+
+        <input type="submit" name="button" id="button" value="Volver a inicio"  onclick="location.href = '/AppGrupo5/' ">
+        <input type="submit", value="Enviar">
+
+
+    </form>
+
+  

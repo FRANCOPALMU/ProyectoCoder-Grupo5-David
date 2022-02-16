@@ -1,0 +1,35 @@
+{% extends 'AppGrupo5/single.html' %}
+
+{% load static %}
+{% block cambios %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/AppGrupo5/assets/css/main.css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="detalle">
+    <h1>Artista: <i> <b>{{object.artista}} </i></b></h1>
+</div>
+    <h3>Album: {{object.album}}</h3>
+
+    <h3>Fecha Lanzamiento: {{object.fechaLanzamiento}}</h3>
+
+
+    <footer>
+        <ul class="actions">
+            <li><a href="{% url 'ListaDiscos' %}"class="button large">Lista </a> </li>
+            <li><a href="/AppGrupo5/" class="button large">Volver</a></li>
+        </ul>
+    </footer>
+
+
+{% endblock cambios %}
+    
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+  <!--
+      Future Imperfect by HTML5 UP
+      html5up.net | @ajlkn
+      Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+  <html>
+      <head>
+          <title>Instrumentos GP5</title>
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+          <link rel="stylesheet" href="/static/AppGrupo5/assets/css/main.css" />
+      </head>
+      <body class="single is-preload">
+      
+          
+          
+          <!-- Wrapper -->
+          <div id="wrapper">
+              
+              <!-- Header -->
+              <header id="header">
+                  <h1><a href="/AppGrupo5/">Instrumentos GP5</a></h1>
+                  <nav class="links">
+                      <ul>
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/about">About</a></li>
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/instrumentos">Instrumentos</a></li>
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/disco">Discos</a></li>
+  
+                          
+                          {% if not request.user.is_authenticated %}
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/login">Login</a></li>
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/registro">Registrate</a></li>     
+                          {% endif %}
+                          
+                          {% if request.user.is_authenticated %}
+                          
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/editarPerfil/">Bienvenido <b>{{user.username}}</b> </a></li>  
+                          <img style="border-radius: 50%;vertical-align:middle"  height="40px" src="{{url}}" />
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/logout">Logout</a></li>
+                          
+                          {% endif %}
+                      </ul>
+                  </nav>
+
+                  
+            </header>
+
+            <ul>
+                <p align="right">
+                 <a style="text-align:right" class="button" href="/AppGrupo5/listaDiscos/">Listado completo de Discos</a>
+                </p>
+            
+            </ul>
+              <!-- Menu -->
+              <section id="menu">
+                  
+                  <!-- Search -->
+                  <section>
+                      <form class="search" method="get" action="#">
+                          <input type="text" name="query" placeholder="Search" />
+                      </form>
+                  </section>
+  
+                          <!-- Actions -->
+                              <section>
+                                  <ul class="actions stacked">
+                                      <li><a href="#" class="button large fit">Log In</a></li>
+                                  </ul>
+                              </section>
+  
+                      </section>
+                      {% block cambios %}
+                  <!-- Main -->
+                      <div id="main">
+  
+                          <!-- Post -->
+                          <article class="post">
+                              <header>
+                                  <div class="title4">
+                                      <h2><a href="/AppGrupo5/single/">Starboy</a></h2>
+                                      <p>25 de noviembre de 2016</p>
+                                  </div>
+                                  <div class="meta">
+                                      <time class="published" datetime="2022-02-12">Febrero 12, 2022</time>
+                                      <a href="#" class="author"><span class="name">Franco De Nicola</span><img src="images/avatar.jpg" alt="" /></a>
+                                  </div>
+                              </header>
+                              <a href="single.html" class="image featured"><img src="" alt="" /></a>
+                              <p>Starboy es el título del tercer álbum de estudio del cantante y compositor canadiense The Weeknd. XO y Republic Records lanzaron el disco el 25 de noviembre de 2016</p>
+  
+                              <h2><b>  Portada  </b></h2>
+                                  <p>La portada del álbum fue fotografiada y diseñada por Nabil Elderkin. En él se ve a The Weeknd con el pelo más corto, en una actitud agachada, con un collar de cruz y se destaca por las rayas de neón azul a través de un fondo rosado del mismo material. La parte superior de la imagen dice el nombre del álbum en letras amarillas y los bordes del embalaje son granulados por el neón azul. También la portada contiene la etiqueta de Parental Advisory: Explicit Content, debido al lenguaje fuerte y a las insinuaciones en algunas de sus canciones. </p>
+                                  
+                                  <h2><b>Sencillos</b></h2>
+                                  <p>El 22 de septiembre de 2016, el primer sencillo del álbum, con el mismo nombre, se lanzó digitalmente en las tiendas de música y servicios de streaming. La canción cuenta con el dúo electrónico francés Daft Punk. Su video musical se estrenó el 28 de septiembre. La canción alcanzó el puesto número uno en la lista Billboard Hot 100, convirtiéndose en el tercer sencillo número uno de The Weeknd.</p>
+  
+                                  <b> False Alarm:</b> 
+                                      <p> Se lanzó como el primer single promocional de Starboy el 29 de septiembre de 2016. La canción alcanzó el número 55 en el Billboard Hot 100.</p>
+  
+                                  <b>I Feel It Coming:</b>
+                                      <p> Se lanzó por primera vez a la radio británica de éxitos contemporáneos el 24 de noviembre de 2016, siendo admitida en la radio contemporánea rítmica el 6 de diciembre de 2016, como el segundo sencillo del álbum. La canción alcanzó hasta el número 4 en el Billboard Hot 100.</p>
+                                    
+                                  <b>Party Monster:</b>	 
+                                      <p> Fue lanzado a la radio urbana contemporánea el 6 de diciembre de 2016, como el tercer sencillo del álbum. Alcanzó el puesto número 16 en la lista Billboard Hot 100, en la semana de lanzamiento del álbum</p>
+  
+                                  <b>Reminder: </b>
+                                      <p> Se lanzó a la radio rítmica contemporánea el 9 de mayo de 2017, como el cuarto sencillo del álbum en los Estados Unidos. La canción alcanzó el número 31 en el Billboard Hot 100.</p>	
+                                    
+                                   <b>Rockin':</b> 
+                                      <p> Se lanzó por primera vez a la radio Francia de éxitos contemporáneos el 9 de mayo de 2017, como el cuarto sencillo internacional del álbum.</p>
+                                    
+                                   <b>Die for You:</b> 
+                                      <p> Se lanzó a la radio urbana contemporánea y AC urbana el 19 de agosto de 2017, como el quinto sencillo del álbum en los Estados Unidos.</p> 
+
+     
+                                                                
+                              <h3><b>Lista de canciones</b></h3>
+                              <p>	Este disco cuenta con 18 canciones:</p>
+                              
+  
+                              <ul>
+                                  <li>Starboy
+                                  <li>Party Monster
+                                  <li>False Alarm
+                                  <li>Reminder
+                                  <li>Rockin'
+                                  <li>Secrets
+                                  <li>True Colors
+                                  <li>Stargirl Interlude
+                                  <li>Sidewalks
+                                  <li>Six Feet Under
+                                  <li>Love to Lay
+                                  <li>A Lonely Night
+                                  <li>Attention
+                                  <li>Ordinary Life
+                                  <li>Nothing Without You
+                                  <li>All I Know
+                                  <li>Die for You
+                                  <li>I Feel It Coming
+                                  </li>
+                              </ul>
+                          
+                              <footer>
+                                  <ul class="actions">
+                                      <li><a href="/AppGrupo5/" class="button large">Volver</a></li>
+                                  </ul>
+                                  <ul class="stats">
+                                      <li><a href="#">General</a></li>
+                                      <li><a href="#" class="icon solid fa-heart">28</a></li>
+                                      <li><a href="#" class="icon solid fa-comment">128</a></li>
+                                  </ul>
+                              </footer>
+                          </article>
+  
+                      </div>
+                      <h2>Tambien podes buscar un disco por artista:</h2>
+
+                      <form action="/AppGrupo5/buscardisco/" method="GET">
+                  
+                          <input type="text" name="artista" id="artista">
+                  
+                          <input type="submit" value="Buscar">
+                  
+                  
+                  
+                  
+                      </form>
+                      {% if Disco %}
+                  
+                      
+                          
+                      <ul>
+                      {% for Discos in Disco %}
+                          <p>Estamos buscando el artista:<b> {{Discos.artista}}</p></b>
+                          <li><p><b>Album:</b> {{Discos.album}} </li></p>
+                          <li><p><b>Fecha de Lanzamiento:</b> {{Discos.fechaLanzamiento}} </li></p>
+                      {% endfor %}
+                  
+                      </ul>
+                  
+                      {% endif %}                     
+                  
+                      {% endblock cambios %}
+                  <!-- Footer -->
+                      <section id="footer">
+                          <ul class="icons">
+                              <li><a href="/AppGrupo5/paginaenconstruccion" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                              <li><a href="/AppGrupo5/paginaenconstruccion" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                              <li><a href="/AppGrupo5/paginaenconstruccion" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                              <li><a href="/AppGrupo5/paginaenconstruccion" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+                              <li><a href="/AppGrupo5/paginaenconstruccion" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                          </ul>
+                          <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+                      </section>
+  
+              </div>
+  
+          <!-- Scripts -->
+              <script src="assets/js/jquery.min.js"></script>
+              <script src="assets/js/browser.min.js"></script>
+              <script src="assets/js/breakpoints.min.js"></script>
+              <script src="assets/js/util.js"></script>
+              <script src="assets/js/main.js"></script>
+  
+      </body>
+    </ul>
+ 
+  
+  
+  
+
+
+ </html>

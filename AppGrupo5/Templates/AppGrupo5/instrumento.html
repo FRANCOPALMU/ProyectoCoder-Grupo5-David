@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+  <!--
+      Future Imperfect by HTML5 UP
+      html5up.net | @ajlkn
+      Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+  <html>
+      <head>
+          <title>Instrumentos GP5</title>
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+          <link rel="stylesheet" href="/static/AppGrupo5/assets/css/main.css" />
+      </head>
+      <body class="single is-preload">
+      
+          
+          
+          <!-- Wrapper -->
+          <div id="wrapper">
+              
+              <!-- Header -->
+              <header id="header">
+                  <h1><a href="/AppGrupo5/">Instrumentos GP5</a></h1>
+                  <nav class="links">
+                      <ul>
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/about">About</a></li>
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/instrumentos">Instrumentos</a></li>
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/disco">Discos</a></li>
+  
+                          
+                          {% if not request.user.is_authenticated %}
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/login">Login</a></li>
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/registro">Registrate</a></li>     
+                          {% endif %}
+                          
+                          {% if request.user.is_authenticated %}
+                          
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/editarPerfil/">Bienvenido <b>{{user.username}}</b> </a></li>  
+                          <img style="border-radius: 50%;vertical-align:middle"  height="40px" src="{{url}}" />
+                          <li class="nav-item"><a class="nav-link" href="/AppGrupo5/logout">Logout</a></li>
+                          
+                          {% endif %}
+                      </ul>
+                  </nav>
+
+                  
+            </header>
+
+            <ul>
+                <p align="right">
+                 <a style="text-align:right" class="button" href="/AppGrupo5/listaInstrumentos/">Listado completo de Instrumentos</a>
+                </p>
+            
+            </ul>
+              <!-- Menu -->
+              <section id="menu">
+                  
+                  <!-- Search -->
+                  <section>
+                      <form class="search" method="get" action="#">
+                          <input type="text" name="query" placeholder="Search" />
+                      </form>
+                  </section>
+  
+                          <!-- Actions -->
+                              <section>
+                                  <ul class="actions stacked">
+                                      <li><a href="#" class="button large fit">Log In</a></li>
+                                  </ul>
+                              </section>
+  
+                      </section>
+                      {% block cambios %}
+                  <!-- Main -->
+                      <div id="main">
+  
+                          <!-- Post -->
+                          <article class="post">
+                              <header>
+                                  <div class="title">
+                                      <h2><a href="/AppGrupo5/single/">Fender Stratocaster</a></h2>
+                                      <p>Una guitarra apta para cualquier genero</p>
+                                  </div>
+                                  <div class="meta">
+                                      <time class="published" datetime="2022-02-12">Febrero 12, 2022</time>
+                                      <a href="#" class="author"><span class="name">Franco De Nicola</span><img src="images/avatar.jpg" alt="" /></a>
+                                  </div>
+                              </header>
+                              <a href="single.html" class="image featured"><img src="" alt="" /></a>
+                              <p>Muchas compañías, cuando llega la hora de hacer el relevo para una serie de sus productos estrella, no pueden evitar sentir dudas o al menos incertidumbre por si el nuevo producto va a ser capaz de sustituir al veterano con eficacia, situándose como uno de los preferidos de sus clientes potenciales o usuarios ya habituales de la marca.</p>
+  
+                              <h2><b>  Origen de la Fender Stratocaster</b></h2>
+                                  <p>Esta fue la primera guitarra eléctrica con cuerpo sólido que salió al mercado en 1954, gracias al ingenio de Leo Fender, B. Carson, G Fullerton y F. Tavares. Su importancia es tal que es el modelo de guitarra eléctrica más imitado del mundo y se ha convertido en un estándar entre las guitarras con cuerpo macizo.</p>
+                                  
+                                  <h2><b>Las Cuatro Fender Stratocaster más icónicas</b></h2>
+  
+                                  <b> Stratocaster Stevie Ray Vaughan:</b> 
+                                      <p> Una de las guitarras más vendidas de la serie y también una de las más caras del mundo.</p>
+  
+                                  <b>Fender Stratocaster Eric Clapton:</b>
+                                      <p>	Es la segunda guitarra más vendida entre las Signature y la usada por este guitarrista. Es la tercera más cara del mundo.</p>
+                                  <img src="" alt="">
+  
+                                  <b>Stratocaster Jimi Hendrix:</b>	 
+                                      <p>Fender creó este modelo como un homenaje para el mejor guitarrista de todos los tiempos. La guitarra tocada por él es la segunda más cara del mundo y cuesta dos millones de dólares.</p>
+  
+                                  <b>Fender Stratocaster David Gilmour: </b>
+                                      <p>Es la guitarra más cara de la empresa y es la que toca el guitarrista de Pink Floyd personalmente. Es la más cara del mundo con un precio de cuatro millones de dólares.</p>	
+  
+                              <h3><b>Características de la Fender Stratocaster</b></h3>
+  
+                              <p>Por el hecho de ser un estándar entre las guitarras eléctricas, la Stratocaster tiene elementos que no han cambiado con el tiempo:</p>
+                                  
+                              <h3><b>Forma del cuerpo</b></h3>
+                              <p>	La forma de las Stratocaster fue creada como Type Strat y así permanece hasta la fecha. Las características de este cuerpo son:</p>
+                              
+  
+                              <ul>
+                                  <li>Presenta un doble cutaway o dos “cuernos” donde uno es más largo que el otro.
+                                  <li>El fondo es totalmente recto, mientras que la tapa presenta un leve inclinación.
+                                  <li>Las medidas del cuerpo de una Stratocaster son:
+                                  <li>345.54 mm en la parte más ancha.
+                                  <li>446,25 mm desde la base hasta el cuerno superior.
+                                  <li>441,25 mm en la base hasta el cuerno inferior.
+                                  <li>45 mm de espesor. 
+                                  <li>Desde el traste 22 hasta la punta de la pala tiene 675,76 mm, con 20 mm de espesor en el traste 22 y 15 mm de espesor en la pala.
+                                  </li>
+                              </ul>
+                          <p>Estas medidas son aproximadas para una Stratocaster Standard, pero pueden haber variaciones mínimas dependiendo del modelo específico.</p>
+                                  
+                              <h3><b>Tipo de cuerpo</b></h3>	
+                              <p>	Su cuerpo no es hueco y está compuesto por una sola pieza de madera maciza. Aunque en la actualidad es posible encontrar guitarras Stratocaster compuestas por un cuerpo macizo con varias capas de distintas maderas.</p>
+                                  
+                              <h3><b>Escala</b></h3>
+                              <p>En general, la escala una guitarra Fender Stratocaster es de 648 mm desde la cejilla del mástil hasta el puente. En nuestra experiencia, hemos notado que esta es la escala más precisa y versátil de todas, incluso más que las presentes en los modelos de Gibson, Epiphone o cualquier otra compañía.</p>
+                                  
+                              <h3><b>	Configuración de pickup</h3></b>
+                                  En cuanto a la electrónica, la primera serie de la Stratocaster contaba con una configuración de micrófonos S-S-S. Posteriormente, para la década de los años ochenta, esta configuración cambió a H-S-S. Recientemente, la empresa ha usado la configuración H-H para competir con las guitarras eléctricas Gibson y otros similares.
+                                  
+                                  Otro aspecto que también poseían las primeras Stratocaster era el sistema pasivo que después evolucionó. Este cambio se logró gracias a la incorporación de un preamplificador activo alimentado una batería de 9 V. Ahora pueden encontrarse hasta con dos baterías de 9 V.</p>
+                                  
+                              <footer>
+                                  <ul class="actions">
+                                      <li><a href="/AppGrupo5/" class="button large">Volver</a></li>
+                                  </ul>
+                                  <ul class="stats">
+                                      <li><a href="#">General</a></li>
+                                      <li><a href="#" class="icon solid fa-heart">28</a></li>
+                                      <li><a href="#" class="icon solid fa-comment">128</a></li>
+                                  </ul>
+                              </footer>
+                          </article>
+  
+                      </div>
+                      <h2>Tambien podes buscar un instrumento:</h2>
+
+                      <form action="/AppGrupo5/buscarinstrumento/" method="GET">
+                  
+                          <input type="text" name="tipoinstrumento" id="tipoinstrumento">
+                  
+                          <input type="submit" value="Buscar">
+                  
+                  
+                  
+                  
+                      </form>
+                      {% if Instrumentos %}
+                  
+                      
+                          
+                      <ul>
+                      {% for Instrumento in Instrumentos %}
+                          <p>Estamos buscando el siguiente tipo de instrumento:<b>{{Instrumento.tipoinstrumento}}</p></b>
+                          <li><p><b>Tipo de instrumento:</b>  {{Instrumento.tipoinstrumento}} </li> </p>
+                          <li><p><b>Marca:</b> {{Instrumento.marca}} </li></p>
+                          <li><p><b>Modelo:</b> {{Instrumento.modelo}} </li></p>
+                          <li><p><b>Color:</b> {{Instrumento.color}} </li></p>
+                      {% endfor %}
+                  
+                      </ul>
+                  
+                      {% endif %}                     
+                  
+                      {% endblock cambios %}
+                  <!-- Footer -->
+                      <section id="footer">
+                          <ul class="icons">
+                              <li><a href="/AppGrupo5/paginaenconstruccion" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                              <li><a href="/AppGrupo5/paginaenconstruccion" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                              <li><a href="/AppGrupo5/paginaenconstruccion" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                              <li><a href="/AppGrupo5/paginaenconstruccion" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+                              <li><a href="/AppGrupo5/paginaenconstruccion" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                          </ul>
+                          <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+                      </section>
+  
+              </div>
+  
+          <!-- Scripts -->
+              <script src="assets/js/jquery.min.js"></script>
+              <script src="assets/js/browser.min.js"></script>
+              <script src="assets/js/breakpoints.min.js"></script>
+              <script src="assets/js/util.js"></script>
+              <script src="assets/js/main.js"></script>
+  
+      </body>
+    </ul>
+ 
+  
+  
+  
+
+
+ </html>

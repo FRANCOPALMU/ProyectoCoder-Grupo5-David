@@ -1,0 +1,54 @@
+{% extends 'AppGrupo5/single.html' %}
+
+{% load static %}
+{% block cambios %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/AppGrupo5/assets/css/main.css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="detalle">
+    <h1>Instrumento: <b>{{object.tipoinstrumento}} </b></h1>
+</div>
+
+<h3>Marca: {{object.marca}}</h3>
+
+<h3>Modelo: {{object.modelo}}</h3>
+
+<h3>Color: {{object.color}}</h3>
+
+<div id="detalle">
+    {% if object.tipoinstrumento == "Guitarra Electrica" %}
+    
+    
+    {% elif  object.tipoinstrumento == "Bajo"%}
+     
+    
+    {% elif  object.tipoinstrumento == "Bateria Acustica"%}
+    
+    
+    
+    {% elif  object.tipoinstrumento == "Bateria Electronica"%}
+    
+    
+    {% endif %}
+    </div>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="{% url 'Lista' %}"class="button large">Lista </a> </li>
+            <li><a href="/AppGrupo5/" class="button large">Volver</a></li>
+        </ul>
+    </footer>
+
+
+{% endblock cambios %}
+    
+</body>
+</html>

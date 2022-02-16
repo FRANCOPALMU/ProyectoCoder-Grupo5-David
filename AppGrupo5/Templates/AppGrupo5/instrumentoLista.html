@@ -1,0 +1,66 @@
+{% extends 'AppGrupo5/single.html' %}
+
+{% load static %}
+
+{% block cambios %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/AppGrupo5/assets/css/main.css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Instrumentos -  Por tipo de Instrumento</h1>
+    
+    <ul>
+        
+        {% for ins in object_list %}
+
+        <!-- Mini Posts -->
+			<section>
+			    <div class="mini-posts">
+                    
+	    <!-- Mini Post -->
+            <article class="mini-post">
+    	    <header>
+                <h3><a href="{% url 'Detalle' ins.id %}">{{ins.tipoinstrumento}}</a></h3>
+                <time class="published" datetime="2015-10-20">October 20, 2015</time>
+                    <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+            </header>
+            <a href="single.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
+		    </article>
+            <footer>
+                
+                <ul class="actions">
+                    {% if request.user.is_authenticated %}
+
+                    <li><a href="{% url 'Detalle' ins.id %}" class="button medium">Ver </a> </li>
+                    <li><a href="{% url 'Actualizar' ins.id %}"class="button medium">Editar </a> </li>
+                    <li><a href="{% url 'Borrar' ins.id %}"class="button medium">Borrar </a> </li>
+
+                    {% endif %}
+                </ul>
+                
+            </footer>
+    </ul>
+   
+    </section>
+    
+    {% endfor %}
+    <footer>
+        <ul class="actions">
+            {% if request.user.is_authenticated %}
+            <li><a href="{% url 'CrearInstrumento' %}"class="button large">Nuevo Instrumento </a> </li>
+            {% endif %}
+            <li><a href="/AppGrupo5/instrumentos" class="button large">Volver</a></li>
+            
+        </ul>
+    </footer>
+</body>
+</html>
+
+{% endblock cambios %}
